@@ -27,6 +27,14 @@ void swap_age(lab *one , lab *two){
 }
 
 
+
+lab *modify_lab(){
+    lab *l;
+    l->age = 1000;
+
+    return l;
+}
+
 int main(){
 
 
@@ -38,6 +46,10 @@ int main(){
 
     printf("one = %i",one);
     printf("two = %i",two);
+
+    lab *sl  = modify_lab();
+
+    printf("%i", sl->age);
 
 
     return 0;
